@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SidebarData from "./SidebarData";
 import "../styles/components/Navbar.css";
 
-function Navbar({ sidebar, onShowSidebar }) {
+function Navbar({ sidebar }) {
   return (
     <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
       <ul className="nav-menu-items">

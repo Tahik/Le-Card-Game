@@ -237,8 +237,7 @@ const App = () => {
     <MetadataContext.Provider value={{ userNftCollection }}>
       <Switch>
         <Route path="/collection/:id?">
-          <Header onShowSidebar={showSidebar} />
-          <Navbar sidebar={sidebar} onShowSidebar={showSidebar} />
+          <Header onShowSidebar={showSidebar} sidebar={sidebar} />
           <Album />
         </Route>
         <Route path="/">
